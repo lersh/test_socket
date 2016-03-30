@@ -31,6 +31,8 @@ namespace SockectClient
             SendMsgUdp(endpoint, "你好，服务器！");
             Thread.Sleep(2000);
             SendMsgUdp(endpoint, "你好，服务器！这是第二条消息！");
+            Thread.Sleep(2000);
+            SendMsgUdp(endpoint, "你好，服务器！这是第三条消息！");
         }
 
         private static void SendMsgUdp(IPEndPoint endpoint, string msg)
